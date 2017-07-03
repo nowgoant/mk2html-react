@@ -1,0 +1,29 @@
+{
+  "name": "mk2html-react",
+  "version": "0.0.1",
+  "description": "mk2html in the react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nowgoant/mk2html-react.git"
+  },
+  "keywords": [
+    "markdown",
+    "html",
+    "static",
+    "site",
+    "react"
+  ],
+  "author": "nowgoant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nowgoant/mk2html-react/issues"
+  },
+  "homepage": "https://github.com/nowgoant/mk2html-react#readme",
+  "devDependencies": {
+    "bisheng": "^0.24.2"
+  }
+}
