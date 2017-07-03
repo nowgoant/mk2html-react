@@ -4,7 +4,9 @@
   "description": "mk2html in the react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "npm run site && bisheng gh-pages",
+    "site": "bisheng build -c ./bisheng.config.js",
+    "start": "bisheng start -c ./bisheng.config.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,8 @@
   },
   "homepage": "https://github.com/nowgoant/mk2html-react#readme",
   "devDependencies": {
-    "bisheng": "^0.24.2"
+    "bisheng": "0.13.3",
+    "bisheng-plugin-antd": "0.3.2",
+    "bisheng-plugin-react": "0.2.2"
   }
 }
