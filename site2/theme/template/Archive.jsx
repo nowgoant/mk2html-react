@@ -8,9 +8,10 @@ function getTime(date) {
 }
 
 export default (props) => {
+  const { themeConfig } = props;
   const toReactComponent = props.utils.toReactComponent;
   const posts = props.picked.posts
-          .sort((a, b) => getTime(b.meta.publishDate) - getTime(a.meta.publishDate));
+    .sort((a, b) => getTime(b.meta.publishDate) - getTime(a.meta.publishDate));
 
   let year = NaN;
   const entryList = [];
@@ -33,7 +34,7 @@ export default (props) => {
         {
           !description ? null :
             <div className="item-description">
-              { toReactComponent(description) }
+              {toReactComponent(description)}
             </div>
         }
       </div>
@@ -42,7 +43,7 @@ export default (props) => {
   return (
     <DocumentTitle title="BiSheng Theme One">
       <Layout {...props}>
-        <h1 className="entry-title">Archive</h1>
+        <h1 className="entry-title">{themeConfig.archiveTitle}</h1>
         <div className="entry-list">
           {entryList}
         </div>

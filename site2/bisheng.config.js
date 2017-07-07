@@ -11,7 +11,7 @@ module.exports = {
   htmlTemplate: './site2/theme/static/template.html',
   themeConfig: {
     home: '/',
-    sitename: 'One',
+    archiveTitle: '文章列表',
     tagline: 'The one theme for bisheng',
     // navigation: [{
     //   title: 'BiSheng',

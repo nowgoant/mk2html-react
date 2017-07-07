@@ -13,7 +13,7 @@ module.exports = {
     'bisheng-plugin-react?lang=__react',
     'bisheng-plugin-antd'
   ],
-  port: 9001,
+  port: 9000,
   webpackConfig(config) {
     config.resolve.alias = {
       // 'react-amap': path.join(process.cwd(), 'lib'),
